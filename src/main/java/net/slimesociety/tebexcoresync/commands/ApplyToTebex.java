@@ -66,7 +66,7 @@ public class ApplyToTebex implements CommandExecutor {
                 boolean post = false;
 
                 try{
-                    post = plugin.getServiceInstance().post(args[1], Integer.parseInt(args[0]));
+                    post = plugin.getServiceInstance().post( args[1], Integer.parseInt(args[0]) );
 
                 }catch (Exception e){
                     if(isPlayer)

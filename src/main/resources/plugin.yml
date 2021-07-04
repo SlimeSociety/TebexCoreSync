@@ -1,6 +1,6 @@
 main: net.slimesociety.tebexcoresync.Main
 name: TebexCoreSync
-version: '1.0'
+version: '1.1'
 description: Sync ranks
 authors: [MidnightCore, SilverCore]
 website: Slimesociety.net

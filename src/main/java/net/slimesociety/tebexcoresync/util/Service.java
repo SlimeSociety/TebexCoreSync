@@ -1,7 +1,7 @@
 package net.slimesociety.tebexcoresync.util;
 
-import com.squareup.okhttp.*;
 import net.slimesociety.tebexcoresync.Main;
+import okhttp3.*;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
@@ -42,35 +42,31 @@ public class Service {
     }
 
     public boolean post(String username, int id) throws IOException {
-        RequestBody body = RequestBody.create(JSON, getJson(username,id));
+        return postNow(getJson(username, id), "/payments");
 
-        Request request = new Request.Builder()
-                .addHeader("X-Tebex-Secret", plugin.getConfigInstance().getKey())
-                .url(plugin.getConfigInstance().getUrl()+"/payments")
-                .post(body)
-                .build();
-
-        Response response = client.newCall(request).execute();
-
-        response.body().close();
-
-        return response.isSuccessful();
     }
 
     public boolean postTest() throws IOException {
-        RequestBody body = RequestBody.create(JSON, "");
+        return postNow("", "/information");
+    }
+
+    public boolean postNow(String json, String uri) throws IOException {
+        RequestBody body = RequestBody.create(json, JSON);
 
         Request request = new Request.Builder()
                 .addHeader("X-Tebex-Secret", plugin.getConfigInstance().getKey())
-                .url(plugin.getConfigInstance().getUrl()+"/information")
+                .url(plugin.getConfigInstance().getUrl() + uri)
                 .post(body)
                 .build();
 
         Response response = client.newCall(request).execute();
 
-        response.body().close();
+        try{
+            response.body().close();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
 
         return response.isSuccessful();
     }
-
 }

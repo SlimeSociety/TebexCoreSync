@@ -6,7 +6,7 @@
 
     <groupId>me.rankbook.tebexcoresync</groupId>
     <artifactId>TebexCoreSync</artifactId>
-    <version>1.0</version>
+    <version>1.1</version>
 
 
     <properties>
@@ -22,7 +22,7 @@
         </repository>
         <repository>
             <id>okhttp</id>
-            <url>https://mvnrepository.com/artifact/com.squareup.okhttp/okhttp</url>
+            <url>https://mvnrepository.com/artifact/com.squareup.okhttp3/okhttp</url>
         </repository>
         <repository>
             <id>json</id>
@@ -47,9 +47,9 @@
         </dependency>
 
         <dependency>
-            <groupId>com.squareup.okhttp</groupId>
+            <groupId>com.squareup.okhttp3</groupId>
             <artifactId>okhttp</artifactId>
-            <version>2.7.5</version>
+            <version>4.9.1</version>
         </dependency>
     </dependencies>
     <build>
@@ -67,15 +67,14 @@
                         <configuration>
                             <relocations>
                                 <relocation>
-                                    <pattern>com.squareup</pattern>
+                                    <pattern>com.squareup.okhttp3</pattern>
                                     <shadedPattern>okhttp</shadedPattern>
                                 </relocation>
                                 <relocation>
-                                    <pattern>okhttp3</pattern>
+                                    <pattern>net.slimesociety.okhttp3</pattern>
                                     <shadedPattern>shaded.okhttp3</shadedPattern>
                                 </relocation>
                             </relocations>
-
                         </configuration>
                     </execution>
                 </executions>
