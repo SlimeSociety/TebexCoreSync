@@ -9,7 +9,6 @@ public class MainConfig {
 
     private String url;
     private String key;
-    private String prefix;
 
     public MainConfig(Main plugin){
         this.plugin = plugin;
@@ -23,7 +22,6 @@ public class MainConfig {
 
         key = config.getString("apikey");
         url = config.getString("url");
-        prefix = config.getString("prefix");
     }
 
     public String getKey() {
@@ -39,7 +37,6 @@ public class MainConfig {
             plugin.reloadConfig();
             key = config.getString("apikey");
             url = config.getString("url");
-            prefix = config.getString("prefix");
 
             return true;
         }
