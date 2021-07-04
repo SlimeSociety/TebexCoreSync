@@ -28,10 +28,14 @@ public class Main extends JavaPlugin {
             if(serviceInstance.postTest()){
                 initComplete = true;
                 Messages.decideWhereToSend("&aPlugin enabled", Level.INFO);
+            }else{
+                Messages.decideWhereToSend("&cFailed to initialize the plugin", Level.SEVERE);
+                Messages.decideWhereToSend("&cCheck if your Tebex secret is inserted into the config file.", Level.SEVERE);
             }
         } catch (IOException e) {
             Messages.decideWhereToSend("&cFailed to initialize the plugin", Level.SEVERE);
-            Messages.decideWhereToSend("&cCheck if your Tebex secret is inserted into the config file.", Level.SEVERE);
+            Messages.decideWhereToSend("&cProblem with contacting TEBEX.", Level.SEVERE);
+            e.printStackTrace();
         }
 
     }

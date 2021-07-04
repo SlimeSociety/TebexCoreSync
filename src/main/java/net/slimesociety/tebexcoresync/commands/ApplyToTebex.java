@@ -31,6 +31,7 @@ public class ApplyToTebex implements CommandExecutor {
                 Messages.decideWhereToSend("&cFailed to initialize the plugin", Level.SEVERE);
                 Messages.decideWhereToSend("&cCheck if your Tebex secret is inserted into the config file.", Level.SEVERE);
             }
+            return true;
         }
 
         if (isPlayer && sender.hasPermission("TebexCoreSync.use")) {
@@ -80,7 +81,7 @@ public class ApplyToTebex implements CommandExecutor {
                 }else{
                     if(isPlayer)
                         Messages.decideWhereToSend("&cFailed to add the rank!", (Player) sender);
-                    Messages.decideWhereToSend("&cFailed to add a rank " + args[0] + " to player " + args[1] + ". Please check if the api key is set correctly. The api key is the same as the secret in Buycraft config.", Level.SEVERE);
+                    Messages.decideWhereToSend("&cFailed to add a rank " + args[0] + " to player " + args[1] + ". Please check if the api key is set correctly. The api key is the same as the secret in Buycraft config. &aOr the player already has this rank.", Level.SEVERE);
                 }
             }
 
