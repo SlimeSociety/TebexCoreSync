@@ -4,9 +4,9 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>me.rankbook.voucher</groupId>
-    <artifactId>VoucherBook</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <groupId>me.rankbook.tebexcoresync</groupId>
+    <artifactId>TebexCoreSync</artifactId>
+    <version>1.0</version>
 
 
     <properties>

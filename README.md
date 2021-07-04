@@ -69,16 +69,28 @@ If you are having trouble with the setup of our plugin or you found a bug, we wi
 Please keep in mind that we may be in a completely different time zone than you. Breaking our discord rules may result in a kick or ban from there, making it impossible for you to receive support. Be nice to us and we will be nice to you, too! :)
 Here is the invite: https://discord.gg/T9T73NyYdF
 
+## Terms of usage
 
-## Licence MIT
+By downloading/using this plugin you agree to the following terms!:
 
-Copyright 2021 SlimeSociety.net
+    - You are not permitted to claim this plugin as your own!
+    - You are not permitted to modify the code or the plugin and call it your own!
+    - You are not permitted to redistribute this plugin as your own!
 
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+## Licence GPL
 
-The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 ## Aditional note
 
