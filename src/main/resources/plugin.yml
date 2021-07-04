@@ -1,0 +1,15 @@
+main: net.slimesociety.voucher.Main
+name: TebexCoreSync
+version: '1.0'
+description: Sync ranks
+authors: [MidnightCore, SilverCore]
+website: Slimesociety.net
+commands:
+  applytotebex:
+    description: Apply a purchase to tebex
+    aliases: []
+    usage: /<command>
+permissions:
+  TebexCoreSync.use:
+    description: Allows applytotebex command
+    default: op
