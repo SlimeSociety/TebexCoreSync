@@ -1,4 +1,4 @@
-main: net.slimesociety.voucher.Main
+main: net.slimesociety.tebexcoresync.Main
 name: TebexCoreSync
 version: '1.0'
 description: Sync ranks
